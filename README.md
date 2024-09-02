@@ -1,3 +1,37 @@
+August Comments
+
+# Poiseuille Flow Pressure Drop Model
+
+This repository contains a simple C program that models the pressure drop in a fluid flowing through a cylindrical tube of constant cross-section. The model is based on the Poiseuille equation and is implemented using the Signaloid Cloud Developer Platform.
+
+## Overview
+
+The program calculates the pressure difference (`deltaP`) between the two ends of a cylindrical tube when fluid flows through it. The pressure drop is computed using the Poiseuille equation:
+
+$\ deltaP = {8· mu· L· Q}/{\pi r^4}$
+
+Where:
+- \(mu\) is the dynamic viscosity of the fluid.
+- \(L\) is the length of the tube.
+- \(Q\) is the volumetric flow rate of the fluid.
+- \(rad\) is the radius of the tube.
+
+## Inputs
+
+The following inputs are used in the model, each associated with a certain range or distribution:
+
+- **Length of the tube (`L`)**: Uniformly distributed between 0.5 and 1.5 (arbitrary units).
+- **Dynamic viscosity (`mu`)**: Normally distributed with a mean of 1 and a standard deviation of 0.1 (arbitrary units).
+- **Volumetric flow rate (`Q`)**: Normally distributed with a mean of 5 and a standard deviation of 0.2 (arbitrary units).
+- **Radius of the tube (`rad`)**: Uniformly distributed between 0.09 and 0.11 (arbitrary units).
+
+## Outputs
+
+The output of the program is the calculated pressure drop (`deltaP`) across the tube, expressed in Pascals (Pa).
+
+
+# Original content from the source
+
 [<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-dark-v6.png#gh-dark-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/DrSopes/Signaloid-Test#gh-dark-mode-only)
 [<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.png#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/DrSopes/Signaloid-Test#gh-light-mode-only)
 
